@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estagio</title>
+</head>
+<link rel="stylesheet" href="test-style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0" />
+
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="logo-in8-dev.svg" class="logo">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#cadastro">Cadastro</a></li>
+                    <li><a href="#lista">Lista</a></li>
+                    <li><a href="#footer">Sobre mim</a></li>
+                </ul>
+            </nav>
+            <div class="menu-icon">
+                <img src="icones/hamburguer.svg">
+            </div>
+        </div>
+        <a href="Test.html" class="inicio"><img src="icones/topo-pag.svg" ></a>2
+        <section class="home">
+            <div class="texto">
+                <div class="titulo">
+                    <h1>ESTÁGIO</h1>
+                    <h2>PROVA DE SELEÇÃO</h2>
+                </div>
+            </div>
+            
+        </section>
+    </div>
+
+    <!-- formulario--->
+    <section class="cadastro" id="cadastro">
+        <div class="limiter">
+            <div class="container-login100">
+                <div class="wrap-login100">
+                    <form class="login100-form validate-form">
+                        <span class="login100-form-title p-b-26">
+                            <h1> CADASTRO </h1>
+                        </span>
+                        <span class="login100-form-title p-b-48">
+                            <i class="zmdi zmdi-font"></i>
+                        </span>
+
+                        <div class="wrap-input100 validate-input">
+                            <input class="input100" type="text" name="txtNome">
+                            <span class="focus-input100" data-placeholder="Nome"></span>
+                        </div>
+                        <div class="wrap-input100 validate-input">
+                            <input class="input100" type="text" name="txtEmail">
+                            <span class="focus-input100" data-placeholder="E-mail"></span>
+                        </div>
+                        <div class="wrap-input100 validate-input">
+                            <input class="input100" type="text" name="txtNascimento">
+                            <span class="focus-input100" data-placeholder="Nascimento"></span>
+                        </div>
+
+                        <div class="wrap-input100 validate-input">
+                            <input class="input100" type="text" name="txtTelefone">
+                            <span class="focus-input100" data-placeholder="Telefone"></span>
+                        </div>
+
+                        <div class="container-login100-form-btn">
+                            <div class="wrap-login100-form-btn">
+                                <div class="login100-form-bgbtn"></div>
+                                <input type="button" value="CADASTRAR" class="login100-form-btn"
+                                    onclick="cadPessoa(txtNome.value, txtEmail.value, txtNascimento.value, txtTelefone.value)">
+
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
+    <!-- tabela--->
+    <section class="lista" id="lista">
+
+        <h1>LISTA DE CADASTRO</h1>
+
+        <div id="dtPessoas">
+            <table id="tbPessoas" >
+
+                <tr>
+                    <td class="ps"> </td>
+                    <td class="bo">Nome</td>
+                    <td class="bo">E-mail</td>
+                    <td class="bo">Nascimento</td>
+                    <td class="ps">Telefone</td>
+
+                </tr>
+
+
+                <tr>
+                    <td class="ps1">1</td>
+                    <td>Fulano Beltrano de Olivera da Silva</td>
+                    <td>fulanobos@gmail.com</td>
+                    <td>13/10/1995</td>
+                    <td class="ps2">(31) 9 9666-1111</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        </div>
+ 
+    </section>
+    <!-- rodapé --->
+    <footer id="footer">
+        <p>Fulano Beltrano de Oliveira da Silva</p>
+        <p>fulanobos@gmail.com</p>
+        <p>(31) 9 9666-1111</p>
+        <p>Faculdade de Belo Horizonte</p>
+    
+        </footer>
+ 
+    <script src="testjs.js">
+
+    </script>
+</body>
+
+</html>

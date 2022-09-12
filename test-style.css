@@ -1,0 +1,388 @@
+
+/* Fontes */
+@font-face {
+  font-family: 'Helvetica', Ultralight;
+  src: url(Fonts/HelveticaUltraLt_0.ttf);
+}
+@font-face {
+  font-family: 'Helvetica', condensed;
+  src: url(Fonts/ps.ttf);
+}
+@font-face {
+  font-family: 'Roboto', Light;
+  src: url(Fonts/Roboto-Light_0.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url(Fonts/Roboto-Regular_0.ttf);
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(imagens/index-image.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-left: 10%;
+  padding-right: 10%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+/*navigation */
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  
+
+}
+
+.logo {
+  width: 200px;
+  cursor: pointer;
+  margin: 30px 0;
+}
+
+
+nav {
+  flex: 1;
+  text-align: right;
+  
+ 
+}
+
+nav ul li {
+  list-style: disc;
+  margin-right: 30px;
+  display: inline-block;
+  
+
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-family: 'Helvetica', Ultralight;
+}
+
+nav ul li a:hover {
+  color: black;
+}
+
+.menu-icon {
+  cursor: pointer;
+  display: none;
+  width: 50px;
+  z-index: 4;
+  box-shadow: 3px 3px 10px;
+  display: fixed;
+
+}
+@media screen and (max-width:950px){
+  .menu-icon{
+    display: block;
+
+  }
+
+  nav ul{
+    position: fixed;
+    width: 60%;
+    height: 200px;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.3s ease-in;
+    background-color: #29abe2;
+    z-index: 4;
+  }
+  nav ul.active{
+    transform: translateX(0);
+  }
+  nav ul li{
+    padding: 10px;
+  }
+  nav ul li a{
+    font-size: 18px;
+    color: #ffffff;
+  }
+  .cadastro{
+    justify-content: center;
+  }
+  button.login100-form-btn{
+    width: 100%;
+    height: 40px;
+    font-size: 10px;
+    text-align: left;
+  }
+  .logo{
+    width: 100px;
+  }
+  .wrap-login100 h1{
+      width: 100%;
+      font-size: 30px;
+  }
+
+
+
+}
+/* Titulo */
+.titulo {
+  font-family: 'Helvetica', Ultralight;
+  color: white;
+  margin-top: 200px;
+  
+}
+
+.titulo h1 {
+  font-size: 55px;
+}
+
+.texto {
+
+  height: 88%;
+}
+
+.cadastro {
+  align-content: center;
+  background-color: #29abe2;
+  align-items: center;
+
+
+}
+
+/* Button */
+.wrap-login100-form-btn {
+  width: 80%;
+  display: block;
+  position: relative;
+  z-index: 3;
+  overflow: hidden;
+  margin: 0 auto;
+  
+}
+
+.login100-form-btn {
+  font-family: 'Helvetica', Ultralight;
+  font-size: 20px;
+  color: #29abe2;
+  background-color: #012d51;
+  
+ 
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 100px;
+}
+
+
+/* login */
+
+.container-login100 {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+
+}
+
+.wrap-login100 {
+  width: 900px;
+  overflow: hidden;
+  padding: 77px 55px 33px 55px;
+
+}
+
+
+/* Validação */
+
+input {
+  outline: none;
+  border: none;
+}
+
+/* titulo */
+
+
+.login100-form-title {
+  display: block;
+  font-family: 'Helvetica', Ultralight;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 100px;
+  width: 100%;
+}
+
+
+
+/* Input */
+
+.wrap-input100 {
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid white;
+  margin-bottom: 30px;
+
+}
+
+.input100 {
+  font-family: 'Helvetica', condensed;
+  font-size: 15px;
+  color: #ffffff;
+  display: inline;
+  width: 100%;
+  height: 70px;
+  background: transparent;
+  padding: 10px;
+}
+
+.focus-input100::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+
+  background: #21d4fd;
+  background: -webkit-linear-gradient(left, #21d4fd);
+  background: -o-linear-gradient(left, #21d4fd);
+  background: -moz-linear-gradient(left, #21d4fd);
+  background: linear-gradient(left, #21d4fd);
+}
+
+.focus-input100::after {
+  font-family: 'Roboto';
+  font-size: 15px;
+  color: #ffffff;
+  content: attr(data-placeholder);
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  padding-left: 5px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+
+.input100:focus+.focus-input100::after {
+  top: -15px;
+}
+
+.input100:focus+.focus-input100::before {
+  width: 100%;
+}
+
+.has-val.input100+.focus-input100::after {
+  top: -15px;
+}
+
+.has-val.input100+.focus-input100::before {
+  width: 100%;
+}
+
+
+/*Tabela*/
+.lista h1{
+  color: #29abe2;
+  font-family: 'Helvetica', Ultralight;
+  font-size: 25px;
+  margin-top: 100px;
+}
+.lista{
+  text-align: center;
+  align-content: center;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+table{
+  margin-top: 100px;
+  width: 100%;
+  padding-left: 20%;
+  height: 100px;
+  border-collapse: collapse;
+  display: flex;
+  border: none;
+  align-items: center;
+  overflow-x: auto;
+  
+  
+  
+}
+table tr td {
+  width: 140px;
+  border-collapse: collapse;
+  border: 1px solid #29abe2 ;
+}
+.inicio{
+  padding: 10px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  box-shadow: 1px 1px 5px #333;
+  
+}
+.ps{
+  border: none;
+
+}
+.ps1{
+  border-left: none;
+}
+.ps2{
+  border-right: none;
+}
+.bo{
+  border-top: none;
+}
+
+
+footer {
+  background-image: url(imagens/rodape-desktop.jpg);
+  text-align: center;
+  color: white;
+  padding: 50px;
+  margin-top: 10px;
+  font-family: 'Roboto', Light;
+  clear:both
+}
+
+footer p {
+  margin-top: 20px;
+  width: 100%;
+}
